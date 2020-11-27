@@ -1,0 +1,8 @@
+https://redux.js.org/recipes/writing-tests
+https://hacks.mozilla.org/2018/04/testing-strategies-for-react-and-redux/
+https://testing-library.com/docs/example-react-redux/
+https://willowtreeapps.com/ideas/best-practices-for-unit-testing-with-a-react-redux-approach
+https://medium.com/@harshverma04111989/extensive-unit-testing-for-react-redux-app-f9224c757ce6
+https://medium.com/asos-techblog/how-to-test-your-react-redux-application-48d90481a253
+https://scotch.io/tutorials/testing-react-and-redux-apps-with-jest
+https://dev.to/nikhilkumaran/don-t-use-create-react-app-how-you-can-set-up-your-own-reactjs-boilerplate-43l0
