@@ -1,10 +1,13 @@
-import Header from './component/header'
-import './App.scss'
+import React from 'react';
+
+import { Button } from './component'
+import './App.scss';
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Button label='button' />
     </div>
   );
 }
