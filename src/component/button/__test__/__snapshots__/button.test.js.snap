@@ -5,6 +5,17 @@ exports[`matches button snapshot 1`] = `
   className="button-style"
   data-testid="button"
 >
+  Hi 
   button label
+</div>
+`;
+
+exports[`matches button snapshot 2 1`] = `
+<div
+  className="button-style"
+  data-testid="button"
+>
+  Hi 
+  button label 2
 </div>
 `;

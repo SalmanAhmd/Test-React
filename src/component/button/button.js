@@ -4,7 +4,7 @@ import './button.scss'
 export const Button = ({ label }) => {
 
   return (
-    <div data-testid='button' className='button-style' >{label}</div>
+    <div data-testid='button' className='button-style' >Hi {label}</div>
   )
 }
 
