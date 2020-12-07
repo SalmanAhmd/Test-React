@@ -2,8 +2,8 @@ import React from "react";
 import { shallow, mount } from "enzyme";
 import toJson from "enzyme-to-json";
 
-import App from "./App";
-import { Account } from './component'
+import App from "../App";
+import { Account } from '../component'
 
 // skip test
 it.skip("renders without crashing", () => {
@@ -39,7 +39,12 @@ describe("mock user name", () => {
   // });
 });
 
-it("renders correctly", () => {
-  const tree = shallow(<App />);
-  expect(toJson(tree)).toMatchSnapshot();
+it("renders correctly Shallow", () => {
+  const treeShollow = shallow(<App />);
+  expect(toJson(treeShollow)).toMatchSnapshot();
+});
+
+it("renders correctly Mount", () => {
+  const treeMount = mount(<App />);
+  expect(toJson(treeMount)).toMatchSnapshot();
 });
