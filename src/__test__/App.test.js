@@ -1,8 +1,9 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
+import toJson from "enzyme-to-json";
 
-import App from "./App";
-import { Account } from './component'
+import App from "../App";
+import { Account } from '../component'
 
 // skip test
 it.skip("renders without crashing", () => {
@@ -30,6 +31,20 @@ describe("mock user name", () => {
   it("contains users account email", () => {
     const wrapper = mount(<Account user={user} />);
     const value = wrapper.find("p").text();
-    expect(value).toEqual("david@gmail.com");
+    expect(value).toEqual(user.email);
   });
+  // it("renders correctly with no error message", () => {
+  //   const wrapper = mount(<Account user={user} />);
+  //   expect(wrapper.state("error")).toEqual(null);
+  // });
+});
+
+it("renders correctly Shallow", () => {
+  const treeShollow = shallow(<App />);
+  expect(toJson(treeShollow)).toMatchSnapshot();
+});
+
+it("renders correctly Mount", () => {
+  const treeMount = mount(<App />);
+  expect(toJson(treeMount)).toMatchSnapshot();
 });

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { Account } from './component'
+import { Account, Button } from './component'
 import './App.scss';
 
 
@@ -41,8 +41,8 @@ function App() {
       ) : (
           <h3>Fetching Users...</h3>
         )}
+      <Button label='button' />
       {/* <div className="App">
-        <Button label='button' />
       </div> */}
     </>
   );
