@@ -8,9 +8,15 @@ https://scotch.io/tutorials/testing-react-and-redux-apps-with-jest
 https://dev.to/nikhilkumaran/don-t-use-create-react-app-how-you-can-set-up-your-own-reactjs-boilerplate-43l0
 
 
+Jest Doc: https://jestjs.io/docs/en/getting-started
+Enzymen : https://enzymejs.github.io/enzyme/docs/api/
+
+Done:
+https://github.com/daacode/react-jest/blob/master/src/App.test.js
+https://www.smashingmagazine.com/2020/06/practical-guide-testing-react-applications-jest/
+https://medium.com/@acesmndr/testing-react-functional-components-with-hooks-using-enzyme-f732124d320a
 
 
-
-
-
-https://cyber.elephant.in/compare/31,22/100000/3?enquiry_id=202011271707
+Working:
+https://www.freecodecamp.org/news/testing-react-hooks/
+https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675
