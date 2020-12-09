@@ -1,3 +1,4 @@
-export * from './button/button';
-export * from './link/link';
-export * from './account/account';
+export * from './button';
+export * from './link';
+export * from './account';
+export * from './basic';
