@@ -27,11 +27,13 @@ describe("mock user name", () => {
   it("accepts user account props", () => {
     const wrapper = mount(<Account user={user} />);
     expect(wrapper.props().user).toEqual(user);
+    wrapper.unmount();
   });
   it("contains users account email", () => {
     const wrapper = mount(<Account user={user} />);
     const value = wrapper.find("p").text();
     expect(value).toEqual(user.email);
+    wrapper.unmount();
   });
   // it("renders correctly with no error message", () => {
   //   const wrapper = mount(<Account user={user} />);
@@ -47,4 +49,5 @@ it("renders correctly Shallow", () => {
 it("renders correctly Mount", () => {
   const treeMount = mount(<App />);
   expect(toJson(treeMount)).toMatchSnapshot();
+  treeMount.unmount();
 });
