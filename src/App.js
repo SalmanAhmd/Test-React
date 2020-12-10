@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { Account, Button } from './component'
+import { Account, Button, TestHook } from './component'
 import './App.scss';
 
 
@@ -28,6 +28,15 @@ function App() {
       })));
   }, [setState])
 
+
+  // const [state1, setState1] = useState("Some Text");
+  const [name, setName] = useState("Moe");
+
+  const changeName = () => {
+    setName("Steve")
+  }
+
+
   const { isLoading, users, error } = state;
 
   return (
@@ -42,8 +51,11 @@ function App() {
           <h3>Fetching Users...</h3>
         )}
       <Button label='button' />
-      {/* <div className="App">
-      </div> */}
+
+      {/* -------------------- */}
+      <h1> Basic Hook useState </h1>
+      <TestHook name={name} changeName={changeName} />
+
     </>
   );
 }

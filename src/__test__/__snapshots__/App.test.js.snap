@@ -19,6 +19,32 @@ exports[`renders correctly Mount 1`] = `
       button
     </div>
   </Button>
+  <h1>
+     Basic Hook useState 
+  </h1>
+  <TestHook
+    changeName={[Function]}
+    name="Moe"
+  >
+    <div>
+      <button
+        onClick={[Function]}
+      >
+        State Change Button
+      </button>
+      <p>
+        Initial State
+      </p>
+      <button
+        onClick={[Function]}
+      >
+        Change Name
+      </button>
+      <p>
+        Moe
+      </p>
+    </div>
+  </TestHook>
 </App>
 `;
 
@@ -32,6 +58,13 @@ exports[`renders correctly Shallow 1`] = `
   </h3>
   <Button
     label="button"
+  />
+  <h1>
+     Basic Hook useState 
+  </h1>
+  <TestHook
+    changeName={[Function]}
+    name="Moe"
   />
 </Fragment>
 `;
