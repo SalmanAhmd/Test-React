@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 import * as ACTIONS from '../../store/actions'
 import * as Reducer from '../../store/reducer'
 
