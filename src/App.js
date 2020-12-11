@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import { Account, Button, TestHook } from './component'
+import { Account, Button, TestHook, TestHookContext } from './component'
 import './App.scss';
+import Context from './store/context';
 
 
 function App() {
@@ -29,11 +30,14 @@ function App() {
   }, [setState])
 
 
-  // const [state1, setState1] = useState("Some Text");
+  const [state1, setState1] = useState("Some Text");
   const [name, setName] = useState("Moe");
 
   const changeName = () => {
     setName("Steve")
+  }
+  const changeText = () => {
+    setState1("Some Other Text")
   }
 
 
@@ -55,7 +59,13 @@ function App() {
       {/* -------------------- */}
       <h1> Basic Hook useState </h1>
       <TestHook name={name} changeName={changeName} />
-
+      <h1> Basic Hook useContext</h1>
+      <Context.Provider value={{
+        changeTextProp: changeText,
+        stateProp: state1
+      }} >
+        <TestHookContext />
+      </Context.Provider>
     </>
   );
 }

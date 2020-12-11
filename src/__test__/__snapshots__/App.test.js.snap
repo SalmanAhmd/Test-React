@@ -45,6 +45,21 @@ exports[`renders correctly Mount 1`] = `
       </p>
     </div>
   </TestHook>
+  <h1>
+     Basic Hook useContext
+  </h1>
+  <TestHookContext>
+    <div>
+      <button
+        onClick={[Function]}
+      >
+        Change Text
+      </button>
+      <p>
+        Some Text
+      </p>
+    </div>
+  </TestHookContext>
 </App>
 `;
 
@@ -66,5 +81,18 @@ exports[`renders correctly Shallow 1`] = `
     changeName={[Function]}
     name="Moe"
   />
+  <h1>
+     Basic Hook useContext
+  </h1>
+  <ContextProvider
+    value={
+      Object {
+        "changeTextProp": [Function],
+        "stateProp": "Some Text",
+      }
+    }
+  >
+    <TestHookContext />
+  </ContextProvider>
 </Fragment>
 `;
