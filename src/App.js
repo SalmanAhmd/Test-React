@@ -11,6 +11,7 @@ function App() {
     isLoading: true,
     users: [],
     error: null,
+    home: "home testing"
   });
 
   useEffect(() => {
